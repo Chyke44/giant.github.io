@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0">
+     <http-equiv="Content-Security-Policy"  
+    <content="upgrade-insecure-requests"
+    <title>My website for monetag ad</title>
+
+    <script src="https://ligheechoagool.com/88/tag.min.js" data-zone="146718" async data-cfasync="false"></script>
+  </head>
+  <body>
+    <h1>Welcome to my website!</h1>
+    <p>This is an example page for Monetag verification<p>
+
+    <button id="showInterstitialAd">Click to See Interstitial Ad</button>
+
+    <button id="showVignetteBannerAd">Click to See Vignette Banner</button>
+
+    <button id="showInPagePushAd">Click to See In-Page Push</button>
+
+   
+
+    <script type="text/javascript">
+
+
+document.getElementById('showInterstitialAd').addEventListener('click',function() {
+            var interstitialAd = document.createElement('script');
+            interstitialAd.src = 'https://ads.monetag.com/ad-tag.js?site=9316062';
+
+document.body.appendChild(interstitialAd);
+            interstitialAd.onload = function() {
+
+console.log('Interstitial ad loaded and should appear');
+        };
+     });
+
+
+document.getElementById('showVignetteBannerAd'.addEventListener('click',function() {
+            var vignetteBannerAd = document.createElement('script');
+            vignetteBannerAd.src = 'https://ads.monetag.com/ad-tag.js?site=9316063';
+
+
+document.body.appendChild(vignetteBannerAd.onload = function() {
+
+console.log('Vignette banner ad loaded');
+         };
+      });
+
+
+document.getElementById('showInPagePushAd').addEventListener('click',function() {
+            var inPagePushAd = document.createElement('script');
+            inPagePushAd.src = 'https://ads.monetag.com/ad-tag.js?site=9316061';
+
+document.body.appendChild(inPagePushAd);
+
+            inPagePushAd.onload = function() {
+console.log('In-page push ad loaded');
+         };
+      });
+
+
+if (window.location.protocol !== 'https:') {
+
+window.location.replace('https://' +
+window.location.hostname +
+window.location.pathname;
+  }
+      </script
+
+      <footer>
+           <p>&copy; 2025 Monetag. All rights reserved.</p>
+      </footer>
+ </body>
+</html>
+
+
+
+
+
+
+
+
+
+
